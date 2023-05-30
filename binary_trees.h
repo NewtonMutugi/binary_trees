@@ -39,6 +39,10 @@ void binary_tree_print(const binary_tree_t *);
 binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
 void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
-
+void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
+void binary_tree_avl_delete(avl_t *tree);
+avl_t *sorted_array_to_avl(int *array, size_t size);
+avl_t *create_avl_tree(int *array, int start, int end, avl_t *parent);
+avl_t *create_avl_node(int n, avl_t *parent);
 
 #endif /* _BINARY_TREES_H_ */
