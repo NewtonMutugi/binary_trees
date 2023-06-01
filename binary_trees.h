@@ -46,5 +46,6 @@ avl_t *create_avl_tree(int *array, int start, int end, avl_t *parent);
 avl_t *create_avl_node(int n, avl_t *parent);
 size_t binary_tree_height(const binary_tree_t *tree);
 size_t binary_tree_depth(const binary_tree_t *tree);
+size_t binary_tree_size(const binary_tree_t *tree);
 
 #endif /* _BINARY_TREES_H_ */
